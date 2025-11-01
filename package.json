@@ -1,0 +1,27 @@
+{
+  "name": "ws-chat-app",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev:web": "bun --cwd apps/web dev",
+    "dev:api": "bun --cwd apps/api dev",
+    "dev": "bun run dev:api && bun run dev:web"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.91.2",
+    "@types/bun": "latest",
+    "@types/node": "^24.9.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.5",
+    "@tanstack/react-query-devtools": "^5.90.2"
+  }
+}
