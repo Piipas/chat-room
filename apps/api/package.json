@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
     "start": "bun run dist/src/index.js",
-    "build": "tsdown src/index.ts -d dist --dts"
+    "build": "bun --cwd ../../packages/prisma build:deploy && tsdown src/index.ts -d dist --dts"
   },
   "dependencies": {
     "@elysiajs/cors": "^1.4.0",
