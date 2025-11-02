@@ -4,6 +4,9 @@
     "build": {
       "outputs": ["dist/**"]
     },
+    "build:deploy": {
+      "outputs": ["dist/**"]
+    },
     "check-types": {
       "dependsOn": ["^check-types"]
     },

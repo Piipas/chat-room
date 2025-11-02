@@ -3,7 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "build": "prisma migrate deploy && prisma generate && tsc"
+    "build": "prisma generate && tsc",
+    "build:deploy": "prisma migrate deploy && prisma generate && tsc"
   },
   "devDependencies": {
     "@types/bun": "latest"
