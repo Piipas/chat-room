@@ -6,7 +6,8 @@
   "scripts": {
     "dev:web": "bun --cwd apps/web dev",
     "dev:api": "bun --cwd apps/api dev",
-    "dev": "bun run dev:api && bun run dev:web"
+    "dev": "bun run dev:api && bun run dev:web",
+    "postinstall": "turbo run build --filter=@bibas/prisma"
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^5.91.2",
