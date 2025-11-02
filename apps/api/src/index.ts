@@ -36,3 +36,5 @@ websocketRoutes(app);
 app.listen(process.env.PORT || 4000);
 
 console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`);
+
+export default app;
