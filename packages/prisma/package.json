@@ -4,13 +4,17 @@
   "type": "module",
   "scripts": {
     "build": "prisma generate && tsc",
-    "build:deploy": "prisma migrate deploy && prisma generate && tsc"
+    "build:deploy": "tsc && mkdir -p dist/generated/prisma && cp -R generated/prisma dist/generated/ "
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prisma": "^6.18.0"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
-  "main": "dist/index.js"
+  "main": "dist/index.js",
+  "dependencies": {
+    "@prisma/client": "^6.18.0"
+  }
 }
