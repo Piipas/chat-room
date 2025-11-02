@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "prisma generate && tsc",
-    "build:deploy": "prisma migrate deploy && prisma generate && tsc && mkdir -p dist/generated/prisma && cp -R generated/prisma dist/generated/ "
+    "build:deploy": "prisma migrate deploy && prisma generate && tsc && mkdir -p dist/generated/prisma && cp -R generated/prisma dist/generated/ && ts-add-js-extension --dir=dist"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -15,6 +15,7 @@
   },
   "main": "dist/index.js",
   "dependencies": {
-    "@prisma/client": "^6.18.0"
+    "@prisma/client": "^6.18.0",
+    "ts-add-js-extension": "^1.6.6"
   }
 }

@@ -76,6 +76,7 @@
       "name": "@bibas/prisma",
       "dependencies": {
         "@prisma/client": "^6.18.0",
+        "ts-add-js-extension": "^1.6.6",
       },
       "devDependencies": {
         "@types/bun": "latest",
@@ -986,6 +987,8 @@
     "token-types": ["token-types@6.1.1", "", { "dependencies": { "@borewit/text-codec": "^0.1.0", "@tokenizer/token": "^0.3.0", "ieee754": "^1.2.1" } }, "sha512-kh9LVIWH5CnL63Ipf0jhlBIy0UsrMj/NJDfpsy1SqOXlLKEVyXXYrnFxFT1yOOYVGBSApeVnjPw/sBz5BfEjAQ=="],
 
     "tree-kill": ["tree-kill@1.2.2", "", { "bin": { "tree-kill": "cli.js" } }, "sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A=="],
+
+    "ts-add-js-extension": ["ts-add-js-extension@1.6.6", "", { "dependencies": { "typescript": "^5.8.2" }, "bin": { "ts-add-js-extension": "build/cjs/bin.js" } }, "sha512-rPOBNrOULi/CjVHraGrDa0vuWDmuMszmIXGNaGe2UGfrBH0/bZWTTsh82uQ+INKp9cJYziKNTCG2knzBlWvW4A=="],
 
     "ts-api-utils": ["ts-api-utils@2.1.0", "", { "peerDependencies": { "typescript": ">=4.8.4" } }, "sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ=="],
 
