@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "prisma generate && tsc",
-    "build:deploy": "tsc && mkdir -p dist/generated/prisma && cp -R generated/prisma dist/generated/ "
+    "build:deploy": "prisma migrate deploy && prisma generate && tsc && mkdir -p dist/generated/prisma && cp -R generated/prisma dist/generated/ "
   },
   "devDependencies": {
     "@types/bun": "latest",
