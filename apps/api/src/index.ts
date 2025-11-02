@@ -29,7 +29,9 @@ const init = new Elysia()
     },
   });
 
-const app = new Elysia().use(init).get("/", () => ({ message: "This route just for checking that the server is running as expected! o7" }));
+const app = new Elysia({ serve: { hostname: process.env?.HOSTNAME || "localhost" } })
+  .use(init)
+  .get("/", () => ({ message: "This route just for checking that the server is running as expected! o7" }));
 conversationRoutes(app);
 websocketRoutes(app);
 
