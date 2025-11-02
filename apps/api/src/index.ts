@@ -33,6 +33,6 @@ const app = new Elysia().use(init);
 conversationRoutes(app);
 websocketRoutes(app);
 
-app.listen(3000);
+app.listen(process.env.PORT || 4000);
 
 console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`);

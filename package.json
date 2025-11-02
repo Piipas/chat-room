@@ -1,5 +1,5 @@
 {
-  "name": "ws-chat-app",
+  "name": "bibas-chat-room",
   "module": "index.ts",
   "type": "module",
   "private": true,
@@ -11,7 +11,8 @@
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^5.91.2",
     "@types/bun": "latest",
-    "@types/node": "^24.9.1"
+    "@types/node": "^24.9.1",
+    "turbo": "^2.6.0"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -23,5 +24,6 @@
   "dependencies": {
     "@tanstack/react-query": "^5.90.5",
     "@tanstack/react-query-devtools": "^5.90.2"
-  }
+  },
+  "packageManager": "bun@1.2.20"
 }
