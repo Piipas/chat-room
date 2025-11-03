@@ -16,4 +16,10 @@ export const auth = betterAuth({
     },
   },
   trustedOrigins: process.env.BETTER_AUTH_TRUSTED_ORIGINS?.split(","),
+  advanced: {
+    defaultCookieAttributes: {
+      sameSite: "none",
+      secure: process.env.ENVIRONMENT === "production",
+    },
+  },
 });
